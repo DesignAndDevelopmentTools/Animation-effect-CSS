@@ -2,18 +2,18 @@
 
 > Animation effect CSS
 
-1. Include the stylesheet on your document's `<head>`
+> 1. Include the stylesheet on your document's `<head>`
 
   ```html
   <head>
     <link rel="stylesheet" href="animate.min.css">
   </head>
   ```
-2. Add the class `animated` to the element you want to animate.
+> 2. Add the class `animated` to the element you want to animate.
 
-3. You can also include the class `infinite` for an infinite loop.
+> 3. You can also include the class `infinite` for an infinite loop.
 
-3. Finally you need to add one of the following classes:
+> 4. Finally you need to add one of the following classes:
 
   * `bounce`
   * `flash`
@@ -101,7 +101,7 @@
 ```
 
 
-4. You can change the duration of your animations, add a delay or change the number of times that it plays:
+> 5. You can change the duration of your animations, add a delay or change the number of times that it plays:
 
 ```css
 #yourElement {
@@ -110,7 +110,7 @@
   -vendor-animation-iteration-count: infinite;
 }
 ```
-For more information about (Web Compatibility)[https://github.com/DesignAndDevelopmentTools/Web-compatible-code] go here.
+For more information about [Web Compatibility](https://github.com/DesignAndDevelopmentTools/Web-compatible-code) go here.
 
 *Note: be sure to replace "vendor" in the CSS with the applicable vendor prefixes (webkit, moz, ms) property*
 
