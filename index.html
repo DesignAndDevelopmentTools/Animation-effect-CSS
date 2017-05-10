@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Animation effect</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <style type="text/css">
+    .item{
+      background-color: gray;
+      padding:30px;
+      margin-top:10px;
+      text-align: center;
+      color:white;
+      width:100%;
+      animation-duration: 3s;
+      animation-delay: 0s;
+      animation-iteration-count: infinite;
+    }
+    .paddingtop{
+      padding-top: 30px;
+    }
+  </style>
+  <script type="text/javascript">
+    function animateDiv(animationType, divitem) {
+          var item = document.getElementsByClassName('item');
+              $(divitem).css({'border':'2px solid red'});
+              $(divitem).addClass(animationType);
+    }
+    function stopAnimate(animationType, divitem) {
+          var item = document.getElementsByClassName('item');
+              $(divitem).css({'border':'2px solid gray'});
+              $(divitem).removeClass(animationType);
+    }
+  </script>
+</head>
+<body style="background-color: #eee;">
+  <div class="container">
+    <br>
+    <center><h1> <span style="border-bottom: 2px solid black;"> &nbsp;&nbsp;Animation&nbsp;&nbsp; </span> </h1></center>
+    <a href="" class="btn btn-primary pull-right" style="font-size: 15px;padding:3px 7px;">View on Github </a>
+    <div class="clearfix"></div>
+      <div class="row">   <br>
+          <div class="col-lg-6 " style="text-align: right;font-size: 20px;"> Click <span style="border-bottom: 2px solid black;">Twice</span> to <span style="background-color: tomato;padding:5px;">Start</span>  Animation</div>
+          <div class="col-lg-6 " style="text-align: left;font-size: 20px;">  Click <span style="border-bottom: 2px solid black;">Once</span> to <span style="background-color: tomato;padding:5px;">Stop</span> Animation</div>
+      </div>
+      <br>
+    <div class="row paddingtop">
+        <div class="col-md-3"> 
+            <button class="item animated " ondblclick="animateDiv('bounce',this)" onclick="stopAnimate('bounce',this)">bounce</button>
+            <button class="item animated " ondblclick="animateDiv('flash',this)"onclick="stopAnimate('flash',this)">flash</button>
+            <button class="item animated " ondblclick="animateDiv('pulse',this)"onclick="stopAnimate('pulse',this)">pulse</button>
+            <button class="item animated " ondblclick="animateDiv('rubberBand',this)"onclick="stopAnimate('rubberBand',this)">rubberBand</button>
+            <button class="item animated " ondblclick="animateDiv('shake',this)"onclick="stopAnimate('shake',this)">shake</button>
+            <button class="item animated " ondblclick="animateDiv('headShake',this)"onclick="stopAnimate('headShake',this)">headShake</button>
+            <button class="item animated " ondblclick="animateDiv('swing',this)"onclick="stopAnimate('swing',this)">swing</button>
+            <button class="item animated " ondblclick="animateDiv('tada',this)"onclick="stopAnimate('tada',this)">tada</button>
+            <button class="item animated " ondblclick="animateDiv('wobble',this)"onclick="stopAnimate('wobble',this)">wobble</button>
+            <button class="item animated " ondblclick="animateDiv('jello',this)"onclick="stopAnimate('jello',this)">jello</button>
+            <button class="item animated " ondblclick="animateDiv('bounceIn',this)"onclick="stopAnimate('bounceIn',this)">bounceIn</button>
+            <button class="item animated " ondblclick="animateDiv('bounceInDown',this)"onclick="stopAnimate('bounceInDown',this)">bounceInDown</button>
+            <button class="item animated " ondblclick="animateDiv('bounceInLeft',this)"onclick="stopAnimate('bounceInLeft',this)">bounceInLeft</button>
+            <button class="item animated " ondblclick="animateDiv('bounceInRight',this)"onclick="stopAnimate('bounceInRight',this)">bounceInRight</button>
+            <button class="item animated " ondblclick="animateDiv('bounceInUp',this)"onclick="stopAnimate('bounceInUp',this)">bounceInUp</button>
+            <button class="item animated " ondblclick="animateDiv('bounceOut',this)"onclick="stopAnimate('bounceOut',this)">bounceOut</button>
+            <button class="item animated " ondblclick="animateDiv('bounceOutDown',this)"onclick="stopAnimate('bounceOutDown',this)">bounceOutDown</button>
+            <button class="item animated " ondblclick="animateDiv('bounceOutLeft',this)"onclick="stopAnimate('bounceOutLeft',this)">bounceOutLeft</button>
+            <button class="item animated " ondblclick="animateDiv('bounceOutRight',this)"onclick="stopAnimate('bounceOutRight',this)">bounceOutRight</button>
+           
+
+           
+         </div>
+
+         <div class="col-md-3"> 
+           <button class="item animated " ondblclick="animateDiv('bounceOutRight',this)"onclick="stopAnimate('bounceOutRight',this)">bounceOutRight</button>
+           <button class="item animated " ondblclick="animateDiv('bounceOutUp',this)"onclick="stopAnimate('bounceOutUp',this)">bounceOutUp</button>
+           <button class="item animated " ondblclick="animateDiv('fadeIn',this)"onclick="stopAnimate('fadeIn',this)">fadeIn</button>
+           <button class="item animated " ondblclick="animateDiv('fadeInDown',this)"onclick="stopAnimate('fadeInDown',this)">fadeInDown</button>
+           <button class="item animated " ondblclick="animateDiv('fadeInDownBig',this)"onclick="stopAnimate('fadeInDownBig',this)">fadeInDownBig</button>
+           <button class="item animated " ondblclick="animateDiv('fadeInLeft',this)"onclick="stopAnimate('fadeInLeft',this)">fadeInLeft</button>
+           <button class="item animated " ondblclick="animateDiv('fadeInLeftBig',this)"onclick="stopAnimate('fadeInLeftBig',this)">fadeInLeftBig</button>
+           <button class="item animated " ondblclick="animateDiv('fadeInRightBig',this)"onclick="stopAnimate('fadeInRightBig',this)">fadeInRightBig</button>
+           <button class="item animated " ondblclick="animateDiv('fadeInUp',this)"onclick="stopAnimate('fadeInUp',this)">fadeInUp</button>
+           <button class="item animated " ondblclick="animateDiv('fadeInUpBig',this)"onclick="stopAnimate('fadeInUpBig',this)">fadeInUpBig</button>
+           <button class="item animated " ondblclick="animateDiv('fadeOut',this)"onclick="stopAnimate('fadeOut',this)">fadeOut</button>
+           <button class="item animated " ondblclick="animateDiv('fadeOutDown',this)"onclick="stopAnimate('fadeOutDown',this)">fadeOutDown</button>
+           <button class="item animated " ondblclick="animateDiv('fadeOutDownBig',this)"onclick="stopAnimate('fadeOutDownBig',this)">fadeOutDownBig</button>
+           <button class="item animated " ondblclick="animateDiv('fadeOutLeft',this)"onclick="stopAnimate('fadeOutLeft',this)">fadeOutLeft</button>
+           <button class="item animated " ondblclick="animateDiv('fadeOutLeftBig',this)"onclick="stopAnimate('fadeOutLeftBig',this)">fadeOutLeftBig</button>
+           <button class="item animated " ondblclick="animateDiv('fadeOutRight',this)"onclick="stopAnimate('fadeOutRight',this)">fadeOutRight</button>
+           <button class="item animated " ondblclick="animateDiv('fadeOutRightBig',this)"onclick="stopAnimate('fadeOutRightBig',this)">fadeOutRightBig</button>
+           <button class="item animated " ondblclick="animateDiv('fadeOutUp',this)"onclick="stopAnimate('fadeOutUp',this)">fadeOutUp</button>
+           <button class="item animated " ondblclick="animateDiv('fadeOutUpBig',this)"onclick="stopAnimate('fadeOutUpBig',this)">fadeOutUpBig</button>
+         </div>
+
+         <div class="col-md-3"> 
+           <button class="item animated " ondblclick="animateDiv('flipInX',this)"onclick="stopAnimate('flipInX',this)">flipInX</button>
+           <button class="item animated " ondblclick="animateDiv('flipInY',this)"onclick="stopAnimate('flipInY',this)">flipInY</button>
+           <button class="item animated " ondblclick="animateDiv('flipOutX',this)"onclick="stopAnimate('flipOutX',this)">flipOutX</button>
+           <button class="item animated " ondblclick="animateDiv('fadeOutUpBig',this)"onclick="stopAnimate('fadeOutUpBig',this)">fadeOutUpBig</button>
+           <button class="item animated " ondblclick="animateDiv('lightSpeedIn',this)"onclick="stopAnimate('lightSpeedIn',this)">lightSpeedIn</button>
+           <button class="item animated " ondblclick="animateDiv('lightSpeedOut',this)"onclick="stopAnimate('lightSpeedOut',this)">lightSpeedOut</button>
+           <button class="item animated " ondblclick="animateDiv('rotateIn',this)"onclick="stopAnimate('rotateIn',this)">rotateIn</button>
+           <button class="item animated " ondblclick="animateDiv('rotateInDownLeft',this)"onclick="stopAnimate('rotateInDownLeft',this)">rotateInDownLeft</button>
+           <button class="item animated " ondblclick="animateDiv('rotateInDownRight',this)"onclick="stopAnimate('rotateInDownRight',this)">rotateInDownRight</button>
+           <button class="item animated " ondblclick="animateDiv('rotateInUpLeft',this)"onclick="stopAnimate('rotateInUpLeft',this)">rotateInUpLeft</button>
+           <button class="item animated " ondblclick="animateDiv('rotateInUpRight',this)"onclick="stopAnimate('rotateInUpRight',this)">rotateInUpRight</button>
+           <button class="item animated " ondblclick="animateDiv('rotateOut',this)"onclick="stopAnimate('rotateOut',this)">rotateOut</button>
+           <button class="item animated " ondblclick="animateDiv('rotateOutDownLeft',this)"onclick="stopAnimate('rotateOutDownLeft',this)">rotateOutDownLeft</button>
+           <button class="item animated " ondblclick="animateDiv('rotateOutDownRight',this)"onclick="stopAnimate('rotateOutDownRight',this)">rotateOutDownRight</button>
+           <button class="item animated " ondblclick="animateDiv('rotateOutUpLeft',this)"onclick="stopAnimate('rotateOutUpLeft',this)">rotateOutUpLeft</button>
+           <button class="item animated " ondblclick="animateDiv('rotateOutUpRight',this)"onclick="stopAnimate('rotateOutUpRight',this)">rotateOutUpRight</button>
+           <button class="item animated " ondblclick="animateDiv('hinge',this)"onclick="stopAnimate('hinge',this)">hinge</button>
+           <button class="item animated " ondblclick="animateDiv('jackInTheBox',this)"onclick="stopAnimate('jackInTheBox',this)">jackInTheBox</button>
+           <button class="item animated " ondblclick="animateDiv('rollIn',this)"onclick="stopAnimate('rollIn',this)">rollIn</button>
+
+         </div>
+
+         <div class="col-md-3"> 
+           <button class="item animated " ondblclick="animateDiv('rollOut',this)"onclick="stopAnimate('rollOut',this)">rollOut</button>
+           <button class="item animated " ondblclick="animateDiv('zoomIn',this)"onclick="stopAnimate('zoomIn',this)">zoomIn</button>
+           <button class="item animated " ondblclick="animateDiv('zoomInDown',this)"onclick="stopAnimate('zoomInDown',this)">zoomInDown</button>
+           <button class="item animated " ondblclick="animateDiv('zoomInLeft',this)"onclick="stopAnimate('zoomInLeft',this)">zoomInLeft</button>
+           <button class="item animated " ondblclick="animateDiv('zoomInRight',this)"onclick="stopAnimate('zoomInRight',this)">zoomInRight</button>
+           <button class="item animated " ondblclick="animateDiv('zoomInUp',this)"onclick="stopAnimate('zoomInUp',this)">zoomInUp</button>
+           <button class="item animated " ondblclick="animateDiv('zoomOut',this)"onclick="stopAnimate('zoomOut',this)">zoomOut</button>
+           <button class="item animated " ondblclick="animateDiv('zoomOutDown',this)"onclick="stopAnimate('zoomOutDown',this)">zoomOutDown</button>
+           <button class="item animated " ondblclick="animateDiv('zoomInLeft',this)"onclick="stopAnimate('zoomInLeft',this)">zoomInLeft</button>
+           <button class="item animated " ondblclick="animateDiv('zoomOutRight',this)"onclick="stopAnimate('zoomOutRight',this)">zoomOutRight</button>
+           <button class="item animated " ondblclick="animateDiv('zoomOutUp',this)"onclick="stopAnimate('zoomOutUp',this)">zoomOutUp</button>
+           <button class="item animated " ondblclick="animateDiv('slideInDown',this)"onclick="stopAnimate('slideInDown',this)">slideInDown</button>
+           <button class="item animated " ondblclick="animateDiv('slideInLeft',this)"onclick="stopAnimate('slideInLeft',this)">slideInLeft</button>
+           <button class="item animated " ondblclick="animateDiv('slideInRight',this)"onclick="stopAnimate('slideInRight',this)">slideInRight</button>
+           <button class="item animated " ondblclick="animateDiv('slideInUp',this)"onclick="stopAnimate('slideInUp',this)">slideInUp</button>
+           <button class="item animated " ondblclick="animateDiv('slideOutDown',this)"onclick="stopAnimate('slideOutDown',this)">slideOutDown</button>
+           <button class="item animated " ondblclick="animateDiv('slideOutLeft',this)"onclick="stopAnimate('slideOutLeft',this)">slideOutLeft</button>
+           <button class="item animated " ondblclick="animateDiv('slideOutRight',this)"onclick="stopAnimate('slideOutRight',this)">slideOutRight</button>
+           <button class="item animated " ondblclick="animateDiv('slideOutUp',this)"onclick="stopAnimate('slideOutUp',this)">slideOutUp</button>
+         </div>
+
+    </div>
+  </div>
+<br><br><br><br>
+</body>
+</html>
